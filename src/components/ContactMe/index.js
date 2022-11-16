@@ -22,9 +22,9 @@ const StyledContact = styled.footer`
         justify-content: center;
     }
     img {
-        height: 80px;
-        width: 80px;
-        margin: 10px;
+        height: 75px;
+        width: 75px;
+        padding: 5px;
     }
     h2 {
         display: flex;
@@ -55,8 +55,9 @@ export default function Contact() {
             <p>Você pode me encontrar aqui!</p>
                 <div>
                     <a href=""><img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-github-480.png" alt="Github" /></a>
-                    <a href=""><img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-html-5-480.png" alt="Linkedin" /></a>
-                    <a href=""><img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-git-480.png" alt="Gmail" /></a>
+                    <a href=""><img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-linkedin-480.png" alt="Linkedin" /></a>
+                    <a href=""><img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-discord-480.png" alt="Discord" /></a>
+                    <a href=""><img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-gmail-logo-480.png" alt="Email" /></a>
                 </div>
         </section>
         </StyledContact>
