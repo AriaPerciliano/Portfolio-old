@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const StyledMenu = styled.header`
     display: flex;
-    background-color: #0a0612;
     flex-direction: row-reverse;
     height: 60px;
     width: 100%;
@@ -13,7 +12,6 @@ const StyledMenu = styled.header`
     gap: 5px;
     position: fixed;
     z-index: 50;
-    border-bottom: 3px solid rebeccapurple;
     a {
         height: 55px;
         align-items: center;
@@ -28,11 +26,11 @@ export default function Menu() {
     return (
         <StyledMenu>
             <nav>
-                <a href="#">Contato</a>
-                <a href="#">Projéto</a>
-                <a href="#"><em>Soft Skills</em></a>
-                <a href="#">Habilidades</a>
                 <a href="#">Sobre Mim</a>
+                <a href="#">Habilidades</a>
+                <a href="#"><em>Soft Skills</em></a>
+                <a href="#">Projéto</a>
+                <a href="#">Contato</a>
             </nav>
         </StyledMenu>
     )

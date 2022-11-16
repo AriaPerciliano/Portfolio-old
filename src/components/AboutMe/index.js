@@ -51,7 +51,7 @@ export default function AboutMe() {
         <h2>Sobre Mim</h2>
         <div>
             <img src="https://64.media.tumblr.com/f4415f5db904517acf5d64f0089dedfe/0d32be3001626dad-cc/s540x810/f55b1aa3f6f05fbcc7a91dce7a308a55ce2a927a.pnj" alt="Aria" />
-            <p>Olá! Meu nome é <em>Aria Perciliano Lourenço.</em> Estou a cerca de 3 meses estudando para me tornar uma Desenvolvedora Front-End.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ullam eos quae dicta qui officiis cumque ea aspernatur in eligendi, architecto blanditiis tenetur et voluptatum neque earum asperiores, quisquam recusandae!</p>
+            <p>Olá! Meu nome é <em>Aria Perciliano Lourenço.</em> Estou a cerca de 3 meses estudando para me tornar uma Desenvolvedora Front-End. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ullam eos quae dicta qui officiis cumque ea aspernatur in eligendi, architecto blanditiis tenetur et voluptatum neque earum asperiores, quisquam recusandae!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem soluta fuga commodi quasi sit consequatur rem et quos distinctio natus repellendus molestiae voluptatum placeat eligendi, sed eveniet, modi voluptas!</p>
         </div>
         <button>Baixar Curriculo</button>
