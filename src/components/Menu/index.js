@@ -25,13 +25,12 @@ const StyledMenu = styled.header`
 export default function Menu() {
     return (
         <StyledMenu>
-            <nav>
-                <a href="#">Sobre Mim</a>
-                <a href="#">Habilidades</a>
-                <a href="#"><em>Soft Skills</em></a>
-                <a href="#">Projéto</a>
-                <a href="#">Contato</a>
-            </nav>
+                <nav>
+                    <a href="#">Sobre Mim</a>
+                    <a href="#">Habilidades</a>
+                    <a href="#">Projéto</a>
+                    <a href="#">Contato</a>
+                </nav>
         </StyledMenu>
     )
 }
