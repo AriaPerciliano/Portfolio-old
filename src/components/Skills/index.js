@@ -9,9 +9,8 @@ const StyledSkills = styled.section`
         text-align: center;
         width: 100%;
     section {
-        width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: left;
         justify-items: left;
     }
@@ -85,6 +84,15 @@ const StyledSkillBox = styled.div`
         width: 100px;
     }
 `;
+const StyledSkillText = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    p {
+        padding: 20px;
+    }
+`;
 
 export default function Skills() {
     return (
@@ -120,9 +128,11 @@ export default function Skills() {
                             <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-git-480.png"/>
                         </StyledSkillBox>
                     </div>
-                    <h3>teste</h3>
-                    <p>pohaaaaaaaaaaaaaa</p>
                 </section>
+                <StyledSkillText>
+                    <h3>Texte Texto</h3>
+                    <p>Lorem ipsum dolor sit amet. Ea officiis voluptatem sit voluptatem odio ut vero veniam id dolorem harum ad iure dolorum et corrupti consequuntur et quis aspernatur. Est corrupti error aut veniam neque quo blanditiis rerum sit deleniti odio ut consequatur internos et explicabo officiis.</p>
+                </StyledSkillText>
             </section>
         </StyledSkills>
     )
