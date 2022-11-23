@@ -4,30 +4,39 @@ const StyledSkills = styled.section`
         color: rgb(236, 217, 255);
         background-color: #0a0612;
         display: flex;
-        margin: auto;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 40px;
+        width: 100%;
     section {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: row;
-        margin: auto;
+        justify-content: left;
+        justify-items: left;
+    }
+    .SkillBoxes {
+        display: flex;
+        flex-direction: row;
+    }
+    #skills {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        justify-items: left;
+        width: 80vw;
+    }
+    #SkillText {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        justify-items: left;
+        align-items: center;
     }
     p   {
-        width: 90%;
         font-size: 1.3em;
-        margin: 15px auto;
-    }
-    div {
-        margin: 20px;
-        width: 30%;
-    }
-    img {
-        height: 100px;
-        width: 100px;
-
+        margin: auto;
     }
     button {
         background-color: blueviolet;
@@ -49,8 +58,31 @@ const StyledSkills = styled.section`
         border-bottom: 3px solid rebeccapurple;
     }
     h3 {
-        margin: 10px;
+        margin: auto;
         font-size: 1.5em;
+    }
+`;
+
+const StyledSkillBox = styled.div`
+    height: 106px;
+    width: 106px;
+    background-color: #150c25;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+    margin: 20px;
+    :hover {
+        background-color: #1f1137;
+        transform: scale(1.05);
+    }
+    img {
+        height: 100px;
+        width: 100px;
     }
 `;
 
@@ -58,39 +90,39 @@ export default function Skills() {
     return (
         <StyledSkills>
             <h2>Habilidades</h2>
-            <section>
-                <div>
-                    <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-html-5-480.png" alt="HTML" />
-                    <h3>HTML</h3>
-                    <p><strong>HTML</strong> é uma <em>Linguagem de Marcação de Hipertexto</em> utilizada no desenvolvimento de paginas na web. HTML é basicamente o responsável pela estrutura dos conteúdos da página. Eu possuo cerca de 3 meses de experiência com HTML.</p>
-                </div>
-                <div>
-                    <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-css3-480.png" alt="CSS" />
-                    <h3>CSS</h3>
-                    <p><strong>CSS</strong> é uma <em>Linguagem de Folhas de Estilos</em>utilizada para aplicar estilos nos elementos de um documento HTML. Eu possuo cerda de 3 meses de experiência com CSS.</p>
-                </div>
-                <div>
-                    <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-javascript-480.png" alt="Javascript" />
-                    <h3>Javascript</h3>
-                    <p><strong>Javascript</strong> é uma <em>Linguagem de Programação</em> amplamente utilizada no desenvolvimento de paginas da web, principalmente para criar interatividade com os elementos. Eu possuo cerca de 2 meses de experiência com Javascript.</p>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-react-native-480.png" alt="React" />
-                    <h3>ReactJS</h3>
-                    <p><strong>ReactJS</strong> é uma <em>Biblioteca Javascript</em> criada pelo Facebook. Ela é utilizada para a criação de interfaces de usuário em páginas da web. Eu possuo cerca de [REDACTED] meses de experiência com React.</p>
-                </div>
-                <div>
-                    <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-styled-components-480.png" alt="Styled-components" />
-                    <h3>Styled-components</h3>
-                    <p><strong>Styled-components</strong> é uma <em>Bibliotéca</em> usada para estilizar componentes de React. O Styled-components permite escrever CSS dentro do próprio Javascript.</p>
-                </div>
-                <div>
-                    <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-next.js-480.png" alt="NextJS" />
-                    <h3>NextJS</h3>
-                    <p><strong>NextJS</strong> é um <em>Framework React</em> criado pela Vercel. O Next procura reunir varios tipos de funcionalidades como por exemplo: <em>Server Side Rendering</em>; <em>Static Site Generation</em> e ótimo suporte a bibliotecas <em>CSS in JS</em></p>
-                </div>
+            <section id="skills">
+                <section>
+                    <div className="SkillBoxes">
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-html-5-480.png"/>
+                        </StyledSkillBox>
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-css3-480.png"/>
+                        </StyledSkillBox>
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-javascript-480.png"/>
+                        </StyledSkillBox>
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-github-480.png"/>
+                        </StyledSkillBox>
+                    </div>
+                    <div className="SkillBoxes">
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-react-native-480.png"/>
+                        </StyledSkillBox>
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-next.js-480.png"/>
+                        </StyledSkillBox>
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-styled-components-480.png"/>
+                        </StyledSkillBox>
+                        <StyledSkillBox>
+                            <img src="https://raw.githubusercontent.com/AriaPerciliano/Portfolio/main/public/icons8-git-480.png"/>
+                        </StyledSkillBox>
+                    </div>
+                    <h3>teste</h3>
+                    <p>pohaaaaaaaaaaaaaa</p>
+                </section>
             </section>
         </StyledSkills>
     )
