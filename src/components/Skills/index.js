@@ -130,8 +130,8 @@ export default function Skills() {
                     </div>
                 </section>
                 <StyledSkillText>
-                    <h3>Texte Texto</h3>
-                    <p>Lorem ipsum dolor sit amet. Ea officiis voluptatem sit voluptatem odio ut vero veniam id dolorem harum ad iure dolorum et corrupti consequuntur et quis aspernatur. Est corrupti error aut veniam neque quo blanditiis rerum sit deleniti odio ut consequatur internos et explicabo officiis.</p>
+                    <h3>HTML</h3>
+                    <p><strong>HTML</strong> é uma <em>Linguagem de Marcação de Hipertexto</em> utilizada no desenvolvimento de paginas na web. HTML é basicamente o responsável pela estrutura dos conteúdos da página. Eu possuo cerca de 3 meses de experiência com HTML.</p>
                 </StyledSkillText>
             </section>
         </StyledSkills>
