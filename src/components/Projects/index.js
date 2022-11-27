@@ -29,7 +29,6 @@ const StyledProjects = styled.section`
         display: flex;
         flex-direction: column;
         padding: 40px;
-        width: 80%;
     }
     h2 {
         display: flex;
@@ -41,6 +40,17 @@ const StyledProjects = styled.section`
         border-bottom: 3px solid rebeccapurple;
     }
 `;
+const StyledTags = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: blueviolet;
+`;
 
 export default function Projects() {
     return (
@@ -51,16 +61,25 @@ export default function Projects() {
                     <img src="https://raw.githubusercontent.com/AriaPerciliano/WatcherZ/main/public/image.png" alt="" />
                     <h3>Clone do Youtube</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet animi ut eaque dolorum mollitia fugiat exercitationem optio sint. Nihil, officia ullam vel sed ducimus est quae quo officiis aspernatur?</p>
+                    <StyledTags>
+                        #ReactJS #NextJS #Styled-components #Supabase
+                    </StyledTags>
                 </div>
                 <div>
                     <img src="https://raw.githubusercontent.com/AriaPerciliano/WatcherZ/main/public/image.png" alt="" />
                     <h3>Clone do Youtube</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet animi ut eaque dolorum mollitia fugiat exercitationem optio sint. Nihil, officia ullam vel sed ducimus est quae quo officiis aspernatur?</p>
+                    <StyledTags>
+                        #Teste #Teste #Teste #Teste
+                    </StyledTags>
                 </div>
                 <div>
                     <img src="https://raw.githubusercontent.com/AriaPerciliano/WatcherZ/main/public/image.png" alt="" />
                     <h3>Clone do Youtube</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet animi ut eaque dolorum mollitia fugiat exercitationem optio sint. Nihil, officia ullam vel sed ducimus est quae quo officiis aspernatur?</p>
+                    <StyledTags>
+                        #Teste #Teste #Teste #Teste
+                    </StyledTags>
                 </div>
             </section>
         </StyledProjects>
